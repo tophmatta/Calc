@@ -64,6 +64,13 @@ class ViewController: UIViewController {
         
         
     }
+    @IBAction func decimal(sender: UIButton) {
+        userIsInMiddleOfTypingANumber = true
+        let dec = sender.currentTitle!
+        let range = display.text!.rangeOfString(".")
+        println(range)
+        
+    }
     
     var displayValue: Double {
         get {
